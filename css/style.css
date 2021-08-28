@@ -16,6 +16,10 @@
     font: 1rem 'Montserrat', sans-serif;
 }
 
+body{
+    background-color: rgb(241, 241, 241);
+}
+
 main{
     padding: 10px;
     max-width: 1170px;
@@ -31,9 +35,6 @@ li{
     list-style: none;
 }
 
-option, select{
-    text-transform: capitalize;
-}
 
 
 /* ===== HEADER ===== */
@@ -169,18 +170,19 @@ main #pagination div button:hover{
 
 main #country{
     display: flex;
+    flex-direction: column;
 }
 
 main #country > figure{
-    width: 40%;
+    width: 100%;
 }
 
 main #country > figure img{
     width: 100%;
 }
 
-main #country ul{
-    margin-left: 20px;
+main #country ul li{
+    margin: 20px 0;
 }
 
 
@@ -188,12 +190,8 @@ main #neighbors h2{
     margin: 50px 0 30px;
 }
 
-/* main #neighbors div{
-    display: flex;
-} */
 
 main #neighbors figure{
-    width: 30%;
     display: inline-block;
     margin: 15px;
 }
@@ -222,17 +220,32 @@ main #neighbors img{
         padding: 10px;
     }
 
-
     main #searchbar form button{
         width: unset;
     }
     
-
     main #pagination{
         position: absolute;
         bottom: 20px;
         left: 50%;
         transform: translate(-50%, 0);
     }
+
+    main #country{
+        flex-direction: row;
+    }
+
+    main #country > figure{
+        width: 40%;
+    }
     
+    main #country ul{
+        margin-left: 20px;
+    }
+
+    main #neighbors figure{
+        width: 30%;
+        display: inline-block;
+        margin: 15px;
+}
 }
