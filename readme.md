@@ -10,5 +10,5 @@ Country Search é uma aplicação para se localizar informações de países bas
 ## API utilizada
 - REST Countries (https://restcountries.eu/)
 
-# Vídeo demonstrativo
+## Vídeo demonstrativo
 - https://youtu.be/rBEbhcUx8V8
