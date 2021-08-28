@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <a href="https://mova.vc/">
+            <div id="logo" role="img" aria-label="Logo Mova"></div>
+        </a>
+
+
+        <button id="btn-return" role="button" aria-label="Botão retornar">
+            
+        </button>
+    </header>
+
+    <main>
+        <section id="searchbar">
+
+            <form method="" action="">
+
+                <div class="filter">
+                    <label for="filter">Filtrar por</label>
+                    <select name="filter" id="filter">
+                        <option value="#">Escolha uma opção</option>
+                        <option value="region">Região</option>
+                        <option value="capital">Capital</option>
+                        <option value="lang">Língua</option>
+                        <option value="alpha">País</option>
+                    </select>
+                </div>
+
+                <div class="result">
+                    <label for="region">Região</label>
+                    <select name="region" id="region">
+                        <option value="#">Escolha uma opção</option>
+                    </select>
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Pesquisar</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="result">
+        </section>
+
+        <!-- <section id="pagination">
+            <button></button>
+            <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+            </div>
+            <button></button>
+        </section> -->
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* A CORRIGIR */
+/* Seta direita do header */
+
+
+:root{
+    --themeColor: #6D2080;
+    --white: #FFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1rem 'Montserrat', sans-serif;
+}
+
+main{
+    padding: 10px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+option, select{
+    text-transform: capitalize;
+}
+
+
+/* ===== HEADER ===== */
+header{
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -5px 10px 5px black;
+}
+
+header a #logo{
+    background: url(../img/logo_mova.svg) center/cover no-repeat;
+    aspect-ratio: 46 / 31;
+    width: 92px;
+    height: 62px;
+}
+
+header #btn-return{
+    background: url(../img/back-arrow.svg) center/cover no-repeat;
+    aspect-ratio: 19 / 12;
+    width: 30PX;
+    height: 18.95px;
+}
+
+
+/* ===== SEARCHBAR ===== */
+main #searchbar form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+main #searchbar form div label{
+    color: var(--themeColor);
+    font-weight: 700;
+}
+
+main #searchbar form select{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #808080;
+    padding: 0 0 5px 20px;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 0 30px;
+    font-weight: 700;
+}
+
+main #searchbar form select option{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main #searchbar form button{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    align-self: flex-end;
+    padding: 12px 30px;
+    border-radius: 14px;
+    background-color: var(--themeColor);
+    color: var(--white);
+    transition: background-color 0.2s;
+}
+
+main #searchbar form button:hover{
+    background-color: #8f2ca8;
+}
+
+main #searchbar .region{
+    display: none;
+}
+
+
+
+/* ===== RESULT ===== */
+main #result figure, #result img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* ===== PAGINATION ===== */
+main #pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #pagination button{
+    background-color: #FFF;
+}
+
+main #pagination > button{
+    padding: 17px;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px 1px gray;
+    transition: background-color .2s, color .2s;
+}
+
+main #pagination > button:nth-of-type(1){
+    background: url(../img/left-arrow.svg) center/30% no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+main #pagination > button:nth-of-type(2){
+    background: url(../img/right-arrow.svg) center/30% no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+main #pagination div{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+main #pagination div button{
+    padding: 10px 15px;
+    box-shadow: 0 5px 5px 1px gray;
+    font-weight: 700;
+    color: gray;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: background-color .2s, color .2s;
+}
+
+main #pagination div button:hover{
+    color: var(--white);
+    background-color: var(--themeColor);
+}
+
+main #country{
+    display: flex;
+}
+
+main #country > figure{
+    width: 40%;
+}
+
+main #country > figure img{
+    width: 100%;
+}
+
+main #country ul{
+    margin-left: 20px;
+}
+
+
+main #neighbors h2{
+    margin: 50px 0 30px;
+}
+
+/* main #neighbors div{
+    display: flex;
+} */
+
+main #neighbors figure{
+    width: 30%;
+    display: inline-block;
+    margin: 15px;
+}
+
+main #neighbors img{
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 992px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #searchbar form{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    main #result figure{
+        width: 33%;
+        display: inline-block;
+        padding: 10px;
+    }
+
+
+    main #searchbar form button{
+        width: unset;
+    }
+    
+
+    main #pagination{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+}
