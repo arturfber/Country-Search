@@ -2,10 +2,9 @@ const queryString = window.location.search;
 
 const urlParams = new URLSearchParams(queryString);
 
-returnButton = document.querySelector('#btn-return').onclick = () =>{
-    window.history.go(-1)
+returnButton = document.querySelector('#btn-return').onclick = () => {
+    window.history.length > 1 ? window.history.go(-1) : window.location.href = 'index.html';
 }
-
 const country = urlParams.get('country')
 
 // Icon tag
