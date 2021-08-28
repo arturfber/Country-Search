@@ -53,6 +53,9 @@ window.onload = () => {
                 times = 10
                 filter2.innerHTML = '<option value="#">Escolha uma região</option>'
 
+                // Altera a label do segundo filtro para Região
+                document.querySelector(".result label").innerText = "Região"
+
                 // Printa os valores presentes na variável Regions no segundo filtro
                 for (var i = 0; i < Regions.length; i++) {
                     option = document.createElement("option")
@@ -69,6 +72,9 @@ window.onload = () => {
 
                 times = 1
                 filter2.innerHTML += '<option value="#">Escolha uma capital</option>'
+
+                // Altera a label do segundo filtro para Capital
+                document.querySelector(".result label").innerText = "Capital"
 
                 // Printa os valores presentes na variável Capitals no segundo filtro
                 for (var i = 0; i < Capitals.length; i++) {
@@ -87,6 +93,9 @@ window.onload = () => {
                 times = 10
                 filter2.innerHTML = '<option value="#">Escolha uma língua</option>'
 
+                // Altera a label do segundo filtro para Língua
+                document.querySelector(".result label").innerText = "Língua"
+
                 // Printa os valores presentes na variável Languages no segundo filtro
                 for (var i = 0; i < Languages.length; i++) {
                     option = document.createElement("option")
@@ -104,6 +113,12 @@ window.onload = () => {
                 times = 1
                 filter2.innerHTML += '<option value="#">Escolha um país</option>'
 
+                // Altera a label do segundo filtro para Capital
+                document.querySelector(".result label").innerText = "Capital"
+
+                // Altera a label do segundo filtro para País
+                document.querySelector(".result label").innerText = "País"
+
                 // Printa os valores presentes na variável Countries no segundo filtro
                 for (var i = 0; i < Countries.length; i++) {
                     option = document.createElement("option")
@@ -120,6 +135,9 @@ window.onload = () => {
 
                 times = 10
                 filter2.innerHTML += '<option value="#">Escolha um código de ligação</option>'
+
+                // Altera a label do segundo filtro para Código de Ligação
+                document.querySelector(".result label").innerText = "Código de Ligação"
 
                 // Printa os valores presentes na variável CallingCoodes no segundo filtro
                 for (var i = 0; i < CallingCodes.length; i++) {

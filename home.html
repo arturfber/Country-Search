@@ -29,7 +29,7 @@
 
                 <div class="filter">
                     <label for="filter">Filtrar por</label>
-                    <select name="filter" id="filter">
+                    <select name="filter" id="filter" tabindex="1">
                         <option value="#">Escolha uma opção</option>
                         <option value="alpha">País</option>
                         <option value="region">Região</option>
@@ -41,14 +41,13 @@
                 </div>
 
                 <div class="result">
-                    <label for="region">Região</label>
-                    <select name="region" id="region">
-                        <option value="#">Escolha uma opção</option>
+                    <label for="region"></label>
+                    <select name="region" id="region" tabindex="2">
                     </select>
                 </div>
 
                 <div class="submit">
-                    <button type="button">Pesquisar</button>
+                    <button type="button" tabindex="3">Pesquisar</button>
                 </div>
             </form>
         </section>
